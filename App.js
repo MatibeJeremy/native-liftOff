@@ -33,7 +33,8 @@ export default function App() {
               />
               <TextInput
                   style={{
-                      width
+                      width: 200,
+                      backgroundColor: 'lightgrey',
                   }}
                   label="Label"
                   variant="outlined"
@@ -41,7 +42,18 @@ export default function App() {
                       <IconButton icon={props => <Icon name="eye" {...props} />} {...props} />
                   )}
               />
-              <TextInput label="Label" variant="standard" />
+
+              <TextInput
+                  style={{
+                      width: 200,
+                      backgroundColor: 'lightgrey',
+                  }}
+                  label="Label"
+                  variant="outlined"
+                  trailing={props => (
+                      <IconButton icon={props => <Icon name="eye" {...props} />} {...props} />
+                  )}
+              />
           </Stack>
       </Surface>
       <StatusBar style="auto" />
